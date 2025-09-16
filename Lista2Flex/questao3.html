@@ -11,21 +11,55 @@
             margin: 0;
             box-sizing: border-box;
         }
-        
-        .bloquinho{
-            height: 15vh;
-            width: 100%;
+        body{
+            background-color: gray;
             display: flex;
-            background-color: bisque;
+            align-items: center;
+            justify-content: center;
         }
 
+        .container-geral{
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            height: 50vh;
+            width: 50vh;
+            border-radius: 10px;
+        }
+
+        .bloquinho{
+            display: flex;
+            width: 100%;
+            height: 25%;
+        }
         .container-foto{
-            width: 25%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 20%;
+            padding: 2%;
             height: 100%;
-            background-color: aqua;
+        }
+        .foto{
+            width: 100%;
+            border-radius: 100px;
+        }
+        .container-info{
+            display: flex;
+            width: 80%;
+            height: 100%;
+            padding-left: 2%;
+            justify-content: center;
+            flex-direction: column;
+            font-size: small;
+            font-weight: 100;
+            color: grey;
+        }
+        .nome{
+            font-size: medium;
+            color: black;
 
         }
-
 
 
 
@@ -34,7 +68,47 @@
 
 </head>
 <body>
-    <div class="bloquinho"></div>
+    <div class="container-geral">
+        <div class="bloquinho">
+            <div class="container-foto">
+                <img src="https://randomuser.me/api/portraits/women/68.jpg" class="foto" alt="">
+            </div>
+            <div class="container-info">
+                <p class="nome">Roberta Locks</p>
+                <p>Rolândia PR</p>
+            </div>
+        </div>
+        <hr>
+        <div class="bloquinho">
+            <div class="container-foto">
+                <img src="https://randomuser.me/api/portraits/men/21.jpg" class="foto" alt="">
+            </div>
+            <div class="container-info">
+                <p class="nome">Pornélios Rubert</p>
+                <p>Rolândia PR</p>
+            </div>
+        </div>
+        <hr>
+        <div class="bloquinho">
+            <div class="container-foto">
+                <img src="https://randomuser.me/api/portraits/men/84.jpg" class="foto" alt="">
+            </div>
+            <div class="container-info">
+                <p class="nome">Fortnélio</p>
+                <p>Rolândia PR</p>
+            </div>
+        </div>
+        <hr>
+        <div class="bloquinho">
+            <div class="container-foto">
+                <img src="https://randomuser.me/api/portraits/men/75.jpg" class="foto" alt="">
+            </div>
+            <div class="container-info">
+                <p class="nome">Twilson</p>
+                <p>Rolândia PR</p>
+            </div>
+        </div>
+    </div>
 
 
 
