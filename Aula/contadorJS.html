@@ -17,22 +17,26 @@
         // let nome="romulo beninca"
         button=document.createElement("button")
         button.id="btn"
-        button.innerText="me clica :3"
+        button.innerText="me clica UwU"
+
+        var contador=0
 
         paragrafo=document.createElement("p")
-        paragrafo.id="p"
+        paragrafo.id="p1"
         
         document.body.appendChild(paragrafo)
         document.body.appendChild(button)
 
         document.body.style.height="100vh"
         document.body.style.display="flex"
+        document.body.style.flexDirection="column"
         document.body.style.justifyContent="center"
         document.body.style.alignItems="center"
 
         addEventListener
         button.addEventListener("click",()=>{
-            p.innerText="Urruuu"
+            p1.innerText=contador
+            contador++
         })
     </script>
 </body>
