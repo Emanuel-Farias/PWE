@@ -30,16 +30,27 @@
             height: auto;
         }
 
-        #input-index{
+        .input-index{
             height: 4.5vh;
             width: 15vw;
             padding: 0.5%;
         }
 
+        .botoes{
+            width: 100%;
+            margin-top: 58%;
+            height: auto;
+            display: flex;
+            gap: 58%;
+        }
 
+        #botao-registrar{
+            background-color: #a7c7e7; 
+        }
 
-
-
+        #botao-logar{
+            background-color: green;
+        }
     </style>
 </head>
 <body>
@@ -48,17 +59,22 @@
 
         <div class="inputetitulo">
             <p>Usuário:</p>
-            <input type="text" id="input-index">
+            <input type="text" class="input-index">
         </div>
 
         <div class="inputetitulo">
             <p>E-mail:</p>
-            <input type="text" id="input-index">
+            <input type="text" class="input-index">
         </div>
 
         <div class="inputetitulo">
             <p>Senha:</p>
-            <input type="password" id="input-index">
+            <input type="password" class="input-index">
+        </div>
+
+        <div class="botoes">
+            <button id="botao-registrar">Registrar</button>
+            <button id="botao-logar">Login</button>
         </div>
 
         
