@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Questão 4</title>
+    <style>
+        body {
+            margin: 0;
+            display: grid;
+            grid-template-rows: auto auto 1fr auto auto auto;
+            grid-template-columns: 200px 1fr 200px;
+            height: 100vh;
+        }
+
+        header {
+            background: #e5b33f;
+            grid-column: 1 / 4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .banner {
+            background: #d74b4b;
+            grid-column: 1 / 4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .left {
+            background: #4ca44c;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .right {
+            background: #e0c53f;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        main {
+            background: #5d8de0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .low {
+            background: #61b35c;
+            grid-column: 1 / 4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        footer {
+            background: #7aa4e6;
+            grid-column: 1 / 4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @media screen and (max-width: 800px) {
+            body {
+                grid-template-columns: 1fr;
+                grid-template-rows: auto auto auto 1fr auto auto auto;
+            }
+            .left {
+                grid-column: 1;
+            }
+            .right {
+                grid-column: 1;
+            }
+            main {
+                grid-column: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>Header</header>
+    <div class="banner">Banner</div>
+    <div class="left">Left Aside</div>
+    <main>Main Content</main>
+    <div class="right">Right Aside</div>
+    <div class="low">Low Content</div>
+    <footer>Footer</footer>
+</body>
+</html>

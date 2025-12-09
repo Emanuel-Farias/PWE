@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Site Responsivo</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 22px;
+        }
+
+        nav {
+            background: #555;
+            padding: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            background: #777;
+            border-radius: 5px;
+        }
+
+        .container {
+            padding: 20px;
+            display: grid;
+            gap: 20px;
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        .card {
+            background: #ddd;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+            font-size: 18px;
+        }
+
+        a.card-link {
+            text-decoration: none;
+            color: black;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        @media screen and (max-width: 900px) {
+            .container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>Portal de Estudos</header>
+
+    <nav>
+        <a href="#web">Web</a>
+        <a href="#html">HTML</a>
+        <a href="#css">CSS</a>
+        <a href="#animate">Animate</a>
+        <a href="#position">Position</a>
+        <a href="#flex">Flex</a>
+        <a href="#grid">Grid</a>
+    </nav>
+
+    <div class="container">
+        <a class="card-link" href="#web"><div class="card" id="web">WEB</div></a>
+        <a class="card-link" href="#html"><div class="card" id="html">HTML</div></a>
+        <a class="card-link" href="#css"><div class="card" id="css">CSS</div></a>
+        <a class="card-link" href="#animate"><div class="card" id="animate">Animate</div></a>
+        <a class="card-link" href="#position"><div class="card" id="position">Position</div></a>
+        <a class="card-link" href="#flex"><div class="card" id="flex">Flex</div></a>
+        <a class="card-link" href="#grid"><div class="card" id="grid">Grid</div></a>
+    </div>
+
+    <footer>© 2025 – Página de Estudos Responsiva</footer>
+
+</body>
+</html>
